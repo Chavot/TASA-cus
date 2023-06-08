@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Missions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="detailstyles.css">
+    <script src= "main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800;900&family=Mulish:wght@300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+  </head>
+
+<body>
+
+<section class="header">
+    <img src="images/TASA_roof_brand.svg" alt="">
+</section>
+
+<nav>
+  <div class="container">
+    <div class="navbar-container">
+      <div class="nav-logo">
+        <img src="images/Horizontal_color_white_wap.svg" alt="logo"/>
+      </div>
+    <!-- desktop and mobile views separate -->
+      <div class="desk-nav-links">
+        <a href="index.html">Home</a>
+        <a href="detail.html">Missions</a>
+        <a href="#">News</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+        <div class="log-sign-menubtn">
+          <div class="desk-log-sign">
+            <button class="desk-nav-log" type="button" name="button">Login</button>
+            <button class="desk-nav-sign" type="button" name="button">Sign up</button>
+          </div>
+          <span class="menubtn"
+            onclick="openMenu()">
+            <svg class="menubtn-icon"><use xlink:href="images/sprites.svg#more"><use></svg>
+          </span>
+
+          <div id="hamburgerMenu" class="menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">
+              <svg class="closebtn-icon"><use xlink:href="images/sprites.svg#right-arrow"><use></svg>
+            </a>
+          <div class="mob-nav-links">
+            <a href="index.html">Home</a>
+            <a href="detail.html">Missions</a>
+            <a href="#">News</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="mob-log-sign">
+            <button class="mob-nav-log" type="button" name="button">Login</button>
+            <button class="mob-nav-sign" type="button" name="button">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="detail-page">
+  <div class="container">
+    <div class="links-content-container">
+      <div class="detail-page-links">
+        <a href="#">Astralis 1-2</a>
+        <a href="#">Astralis 1-3</a>
+        <a href="#">Pinno 1</a>
+      </div>
+    <div class="detail-page-container">
+      <div class="detail-page-img-achvmnt-cont">
+      <img class="detail-page-img" src="images/planet1.jpg" alt="">
+      <div class="detail-page-achvments-container">
+        <div class="detail-page-achvments">
+          <svg class="detail-achvment-icon"><use xlink:href="images/sprites.svg#location"><use></svg>
+            <div class="detail-achvments-title-p">
+              <h5 class="detail-achvments-title">Mission type:</h5>
+              <h4 class="detail-achvments-p">Orbital flyby</h4>
+            </div>
+        </div>
+        <div class="detail-page-achvments">
+          <svg class="detail-achvment-icon"><use xlink:href="images/sprites.svg#euro-money"><use></svg>
+            <div class="detail-achvments-title-p">
+              <h5 class="detail-achvments-title">Mission cost:</h5>
+              <h4 class="detail-achvments-p">~600 mln</h4>
+            </div>
+        </div>
+      </div>
+      </div>
+    <div class="detail-page-content-container">
+      <div class="detail-mission-card">
+        <div class="detail-mission-card-content">
+          <h5 class="dtl-mission-card-details">Launch date: 09.09.2023</h5>
+          <h5 class="dtl-mission-card-details">Length: 2 months</h5>
+          <h4 class="detail-mission-card-title">Mission: <span class="detail-mission-p-color">ASTRALIS 1-2</span></h4>
+          <p class="detail-mission-p">Embark on the intergalactic odyssey of Astralis 1-2, where we'll traverse cosmic realms, harness hyperdimensional propulsion and discover new heights of space exploration.
+            <br><br>
+            The ASTRALIS 1-2 Orbital Flyby mission will commence with the launch of a powerful Heavy rocket, carrying a suite of advanced imaging instruments and scientific sensors. Once in orbit around Earth, the spacecraft will perform a series of trajectory adjustments to synchronize its path.
+           During the flyby, the spacecraft will come within a distance of approximately 10,000 kilometers from the planet, allowing for detailed observation and data collection. The high-resolution multi-spectral cameras will capture stunning imagery of the planet surface, while thermal imaging sensors will provide insights into temperature variations and potential volcanic activity. The LIDAR system will contribute to mapping the topography and atmospheric composition of the planet.
+          </p>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="ft-container">
+      <div class="ft-logo-details-container">
+        <img src="images/Horizontal_color_white_wap.svg" alt="">
+        <p class="ft-logo-details">Address: 8F, 9 Prosperity 1st Road, Hsinchu Science Park, HsinChu City 300, Taiwan (R.O.C.)</p>
+        <p class="ft-details-email">info.pinnacle@tasa.org.tw</p>
+      </div>
+
+      <div class="ft-title-details-container">
+        <div class="ft-title-details">
+          <p class="ft-title">Find your way</p>
+            <a class="ft-details" href="detail.html">Missions</a>
+            <a class="ft-details" href="#">News</a>
+            <a class="ft-details" href="#">About</a>
+            <a class="ft-details" href="#">Contact</a>
+        </div>
+        <div class="ft-title-details">
+          <p class="ft-title">More from us</p>
+            <a class="ft-details" href="#">Partnerships</a>
+            <a class="ft-details" href="#">Terms of use</a>
+            <a class="ft-details" href="#">Privacy</a>
+        </div>
+        <div class="ft-title-details">
+          <p class="ft-title">Social</p>
+            <a class="ft-details" href="#">Twitter</a>
+            <a class="ft-details" href="#">Facebook</a>
+            <a class="ft-details" href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<footer>
+
+<section class="copyright">
+  <div class="container">
+    <hr>
+    <p class="text_small">Copyright © 2023 Taiwan Space Agency. All rights reserved.</p>
+  </div>
+</section>
+
+</body>
+</html>

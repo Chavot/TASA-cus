@@ -1,0 +1,548 @@
+/* styling reset (https://www.joshwcomeau.com/css/custom-css-reset/) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  /* border: 1px solid red; */
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select, a {
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+/* end styling reset */
+/* global */
+/* typography */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800;900&family=Mulish:wght@300;400;500;600;700;800;900;1000&display=swap');
+
+html, body {
+  font-size: 100%; /*16px*/
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #F9F9F9;
+  width: 100%;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #F9F9F9;
+}
+
+h1 {font-size: 3.998rem;}
+
+h2 {font-size: 3.998rem;}
+
+h3 {font-size: 2.827rem;}
+
+h4 {font-size: 1.999rem;}
+
+h5 {font-size: 1.414rem;}
+
+small, .text_small {font-size: 0.707rem;}
+
+a, p, button {
+  text-decoration: none;
+  color: #F9F9F9;
+  font-size: 1rem;
+  font-family: 'Mulish', sans-serif;
+  line-height: 1.969rem;
+}
+a:hover {
+  cursor: pointer;
+  color: #fe8819;
+}
+small, .text_small {
+  font-size: 0.75rem;
+  margin: .5rem 0;
+}
+/* container */
+section, nav, footer {
+  /* center containers */
+  margin-inline: auto;
+  width: 100%;
+}
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+button {
+  cursor: pointer;
+  text-decoration: none;
+  color: #f9f9f9;
+  background-color: #FE4819;
+  border: 4px solid #FE4819;
+  text-align: center;
+  font-weight: 500;
+  border-radius: .5rem;
+  padding: .25rem 2rem;
+  outline-color: transparent;
+}
+button:hover {
+  background-color: transparent;
+}
+/* end global */
+/* header */
+.header {
+  height: 3.75rem;
+}
+/* navbar */
+nav {
+  height: 6.25rem;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+}
+.navbar-container {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-logo img {
+  width: 13rem;
+}
+.desk-nav-links, .desk-log-sign, .desk-nav-log, .desk-nav-sign {
+  display: none;
+  /* desktop elements are not displayed on mobile view */
+}
+.menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+.closebtn {
+  text-decoration: none;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+svg.menubtn-icon, svg.closebtn-icon {
+  fill: #f9f9f9;
+  width: 2.5rem;
+  cursor: pointer;
+}
+svg.menubtn-icon:hover, .closebtn svg:hover {
+  fill: #FE4819;
+}
+.mob-nav-links {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mob-log-sign {
+  display: flex;
+  justify-content: center;
+}
+.mob-nav-links a {
+  padding: 1.5rem;
+}
+.mob-log-sign {
+  margin-top: -1rem;
+}
+.mob-nav-log {
+  background-color: transparent;
+}
+.mob-nav-log:hover {
+  background-color: #FE4819;
+}
+.mob-nav-sign {
+  margin-left: 1.5rem;
+}
+/* end navbar */
+/* hero */
+.hero {
+  padding: 4.7rem 0;
+  background-image: url(images/Hero_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 35%;
+}
+.hero-text-img-container {
+  display: flex;
+	flex-direction: column;
+}
+.herotext {
+  max-width: 25rem;
+  margin:auto
+}
+.hero-btn-container {
+  margin: .75rem 0 3rem 0;
+}
+.hero-img-container {
+  display: flex;
+	align-items: center;
+  justify-content: center;
+}
+img.hero-img {
+  max-width: 23rem;
+}
+.company-logo {
+  display: flex;
+  justify-content: center;
+}
+.hero-company-logos img {
+  max-height: 5rem;
+}
+.hero-company-logos {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* end hero */
+/* about */
+.about {
+  background-color: #092460;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3.about-title {
+  margin: 3rem 0;
+}
+.about-cards-container {
+  display: grid;
+  grid-gap: 5rem;
+  max-width: 23rem;
+}
+.about-card {
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  max-width: 25rem;
+}
+svg.about-card-icon {
+  fill: #FE4819;
+}
+.about-card-title, .about-card-p {
+  margin-top: 2rem;
+  color: #191919;
+}
+svg.about-card-icon {
+  width: 7rem;
+}
+p.about-card-p {
+  text-align: left;
+  line-height: 1.5;
+}
+.achvment-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  padding: 2.813rem 0;
+}
+.achvment-nr-detail {
+  display: flex;
+  flex-direction: column;
+}
+.achvment-nr-detail:nth-child(3), .achvment-nr-detail:nth-child(4) {
+  margin-top: 3rem;
+}
+p.achvment-detail {
+  margin-top: 2rem;
+}
+/* end about */
+/* mission */
+.about-pattern img {
+  width: 100%;
+}
+.mission {
+  background-image: url(images/nightyears2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 0;
+  padding-top: 0;
+}
+.mission-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mission-container h3 {
+  font-size: 2.825rem;
+  font-weight: 500;
+  padding-top: 1.5rem;
+}
+.mission-cards-container {
+  display: grid;
+  grid-gap: 1.5rem;
+  margin: 3rem 0;
+}
+.mission-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 25rem;
+}
+.mission-card img {
+  border: 4px solid #FE4819;
+}
+.mission p, .mission h4, .mission h5 {
+  color: #191919;
+  margin-top: 1.5rem;
+}
+.mission-p-color {
+  color: #092460;
+}
+.mission-card button:hover {
+  color: #000000;
+}
+/* end mission */
+/* sign up section */
+.signup-section {
+  padding: 15rem 0;
+}
+.signup-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.signup-section-p {
+  font-size: 2rem;
+  color: #191919;
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+.signup-section-container button:hover {
+  color: #191919;
+}
+/* end sign up section */
+/* footer */
+footer {
+  background-color: #191919;
+  padding: 0;
+  padding-top: 2rem;
+}
+.ft-container {
+  display: flex;
+  flex-direction: column;
+}
+.ft-logo-details-container {
+  max-width: 23rem;
+}
+.ft-logo-details-container img {
+  width: 17rem;
+}
+footer p {
+  line-height: 1.3;
+}
+p.ft-logo-details {
+  margin-top: 1.5rem;
+}
+p.ft-details-email {
+  font-weight: 600;
+}
+.ft-title-details-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat( 3, 1fr);
+}
+.ft-title-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+p.ft-title {
+  font-weight: 600;
+}
+/* copyright */
+.copyright {
+  padding-top: 2rem;
+  background-color: #191919;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+hr {
+  color: #F9F9F9;
+}
+/* end footer */
+
+/* media querys */
+@media only screen and (min-width: 744px) {
+/* navbar */
+/* display login and register buttons */
+  .desk-log-sign, .desk-nav-log, .desk-nav-sign {
+    display: revert;
+  }
+  .log-sign-menubtn {
+    display: flex;
+	  flex-direction: row;
+	  flex-wrap: nowrap;
+	  justify-content: space-between;
+	  align-items: center;
+  }
+  .desk-log-sign {
+    display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  	align-items: center;
+  }
+  .desk-nav-log, .desk-nav-sign {
+    margin-right: 1.5rem;
+  }
+  .desk-nav-log {
+    background-color: transparent;
+  }
+  .desk-nav-log:hover {
+    background-color: #FE4819;
+  }
+/* end navbar */
+/* hero */
+  .hero-text-img-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero-company-logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+/* end hero */
+}
+@media only screen and (min-width: 980px) {
+/* hero */
+  img.hero-img {
+    max-width: 25rem;
+  }
+/* end hero */
+/* about */
+  .about-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    max-width: 100%;
+  }
+  .achvment-container {
+    margin: 2rem 0;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .achvment-nr-detail:nth-child(3), .achvment-nr-detail:nth-child(4) {
+    margin-top: 0;
+  }
+/* end about */
+/* missions */
+  .mission-card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: revert;
+  }
+  .mission-card img {
+    max-width: 20rem;
+  }
+  .mission-card-content {
+    margin-left: 2rem;
+  }
+  h5.mission-card-details:first-child {
+    margin-top: 0;
+  }
+/* end missions */
+/* footer */
+  .ft-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ft-logo-details-container {
+    max-width: 25rem;
+  }
+  .ft-title-details-container {
+    margin-top: 0;
+  }
+  .ft-title-details {
+    margin-left: 1.5rem;
+  }
+  .copyright {
+    text-align: center;
+  }
+/* end footer */
+}
+@media only screen and (min-width: 1230px) {
+/* container */
+  .container {
+    width: 80%;
+  }
+/* navbar */
+/* hamburger menu not displayed */
+  .menubtn, .menu, .mob-nav-links, .mob-log-sign, .mob-nav-log, .mob-nav-sign {
+    display: none;
+  }
+  .desk-nav-links {
+    display: revert;
+  }
+  .desk-nav-links a {
+    padding: 1rem;
+  }
+  .desk-nav-sign {
+    margin-right: 0;
+  }
+/* end navbar */
+/* hero */
+  img.hero-img {
+    max-width: 60rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+/* container */
+  .container {
+    width: 80rem;
+  }
+/* navbar links */
+  .desk-nav-links a {
+    padding: 2rem;
+  }
+/* hero */
+  .herotext {
+    max-width: 40rem;
+  }
+  h1 {
+    font-size: 5.625rem;
+  }
+  .hero-img-container {
+    max-width: 49%;
+  }
+/* end hero */
+/* about */
+  .about-cards-container {
+    grid-gap: 7.5rem;
+  }
+}
+/* end media querys */

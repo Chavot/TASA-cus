@@ -1,0 +1,136 @@
+/* background */
+.detail-page {
+  background-image: url(images/nightyears1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5rem 0;
+}
+.detail-page::before {
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  filter: grayscale(100%);
+}
+/* detail page links */
+.detail-page-links {
+  background-color: #191919;
+  display: flex;
+  justify-content: space-around;
+  max-width: 25rem;
+  margin-inline: auto;
+  padding: 1.5rem;
+}
+/* detail page content */
+.detail-page-img {
+  border: 4px solid #FE4819;
+  margin-inline: auto;
+}
+.detail-page-container {
+  padding-top: 1.5rem;
+  max-width: 25rem;
+  margin-inline: auto;
+  display: grid;
+  grid-gap: 1.5rem;
+}
+.detail-page-img-achvmnt-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.detail-page-achvments-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: #f9f9f9;
+}
+.detail-page-achvments {
+  display: flex;
+}
+svg.detail-achvment-icon {
+  fill: #FE4819;
+  max-width: 5rem;
+}
+.detail-page-achvments:last-child {
+  margin-top: 1rem;
+}
+h5.detail-achvments-title, h4.detail-achvments-p {
+  color: #191919;
+}
+.detail-achvments-title-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.5rem;
+}
+/* card */
+.detail-page-content-container {
+  display: flex;
+  background-color: #191919;
+  flex: 1;
+}
+.detail-page-content-container {
+  max-width: 25rem;
+}
+.detail-mission-card {
+  background-color: #191919;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 25rem;
+  align-self: flex-start;
+}
+.detail-mission-card-content > * {
+  margin-top: 1.5rem;
+}
+.detail-mission-card-content h5:first-child {
+  margin-top: 0;
+}
+.detail-mission-p-color {
+  color: #FE4819;
+}
+/* end detail page */
+/* media queries */
+@media only screen and (min-width: 1230px) {
+/* layout */
+/* links and all other content side by side */
+  .links-content-container {
+    display: flex;
+  }
+  .detail-page-links {
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 25rem;
+    margin-inline: auto;
+    height: 18rem;
+    margin-right: 1.5rem;
+  }
+  .detail-page {
+    padding-bottom: 0;
+  }
+  .detail-page-container {
+    max-width: 70rem;
+    padding-top: 0;
+  }
+  .detail-page-content-container {
+    max-width: revert;
+    grid-column: 2;
+  }
+  .detail-page-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-gap: 1.5rem;
+  }
+  .detail-page-achvments-container {
+    grid-column: 1;
+    justify-content: space-between;
+  }
+  .detail-mission-card {
+    max-width: revert;
+  }
+}

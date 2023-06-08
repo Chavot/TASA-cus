@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.3 195.02">
+  <defs>
+    <style>
+      .d {
+        fill: #092460;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="back">
+    <g>
+      <rect class="d" x="1343.5" y="0" width="22.81" height="115.25"/>
+      <rect class="d" x="1295.18" y="0" width="23.52" height="118.72"/>
+      <rect class="d" x="1246.86" y="0" width="24.23" height="122.19"/>
+      <rect class="d" x="1198.53" y="0" width="24.94" height="125.66"/>
+      <rect class="d" x="1150.21" y="0" width="25.65" height="129.13"/>
+      <rect class="d" x="1101.89" y="0" width="26.36" height="132.59"/>
+      <rect class="d" x="1053.57" y="0" width="27.08" height="136.06"/>
+      <rect class="d" x="1005.25" y="0" width="27.79" height="139.53"/>
+      <rect class="d" x="956.93" y="0" width="28.5" height="143"/>
+      <rect class="d" x="908.6" y="0" width="29.21" height="146.47"/>
+      <rect class="d" x="860.28" y="0" width="29.92" height="149.94"/>
+      <rect class="d" x="811.96" y="0" width="30.64" height="153.4"/>
+      <rect class="d" x="763.64" y="0" width="31.35" height="156.87"/>
+      <rect class="d" x="715.32" y="0" width="32.06" height="160.34"/>
+      <rect class="d" x="667" y="0" width="32.77" height="163.81"/>
+      <rect class="d" x="618.68" y="0" width="33.48" height="167.28"/>
+      <rect class="d" x="570.35" y="0" width="34.2" height="170.75"/>
+      <rect class="d" x="522.03" y="0" width="34.91" height="174.21"/>
+      <rect class="d" x="473.71" y="0" width="35.62" height="177.68"/>
+      <rect class="d" x="425.39" y="0" width="36.33" height="181.15"/>
+      <rect class="d" x="377.07" y="0" width="37.04" height="184.62"/>
+      <rect class="d" x="328.75" y="0" width="37.75" height="188.09"/>
+      <rect class="d" x="280.42" y="0" width="38.47" height="191.56"/>
+      <rect class="d" x="232.1" y="0" width="39.18" height="195.02"/>
+      <rect class="d" y="0" width="225.06" height="195.02"/>
+    </g>
+  </g>
+</svg>
